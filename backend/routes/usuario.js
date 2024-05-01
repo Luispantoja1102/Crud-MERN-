@@ -33,3 +33,14 @@ router.post('/agregarusuario', (req, res) => {
         }
     });
 });
+
+//obtener usuarios
+router.get('/obtenerusuarios', (req, res) => {
+    ModeloUsuario.find({},function(docs,err){
+        if(err){
+            res.send('Error al obtener usuarios');
+        }else{
+            res.send(docs);
+        }
+    })
+});

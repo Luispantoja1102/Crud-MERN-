@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Navbar from './components/navbar';
-import ListaUsuario from './components/ListaUduario';
+import ListaUsuario from './components/ListaUsuario';
 import EditarUsuario from './components/EditarUsuario';
 import AgregarUsuario from './components/AgregarUsuario';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
