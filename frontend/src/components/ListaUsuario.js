@@ -15,12 +15,12 @@ function ListaUsuario(){
   }, []);
 
   //maperar lista de usuarios en objeto usuario
-  const listausuarios = Array.isArray(datausuarios) && datausuarios.map((usuario) => {
+  const listausuarios = datausuarios.map((usuario) => {
     return (
       <div>
         <UsuarioIndividual usuario={usuario} />
       </div>
-    );
+    )
   });
 
   return (

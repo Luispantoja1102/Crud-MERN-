@@ -36,7 +36,7 @@ router.post('/agregarusuario', (req, res) => {
 
 //obtener usuarios
 router.get('/obtenerusuarios', (req, res) => {
-    ModeloUsuario.find({},function(docs,err){
+    ModeloUsuario.find({},(err,docs) => {
         if(err){
             res.send('Error al obtener usuarios');
         }else{
@@ -44,3 +44,4 @@ router.get('/obtenerusuarios', (req, res) => {
         }
     })
 });
+
