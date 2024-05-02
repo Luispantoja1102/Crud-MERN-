@@ -10,8 +10,10 @@ function UsuarioIndividual({usuario}){
                     <li className="list-group-item">{usuario.email}</li>
                     <li className="list-group-item">{usuario.telefono}</li>
                 </ul>
-                <button className="btn btn-success">Editar</button>
-                <button className="btn btn-danger">Borrar</button>
+                <div className="mt-4">
+                    <button className="btn btn-success">Editar</button>
+                    <button className="btn btn-danger">Borrar</button>
+                </div>
                 <hr className="my-4"></hr>
             </div>
         </div>
